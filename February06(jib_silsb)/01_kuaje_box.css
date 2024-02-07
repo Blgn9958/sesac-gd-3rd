@@ -1,0 +1,14 @@
+caption {
+  font-weight: 1000;
+  color: green;
+  font-size: xx-large;
+}
+.red {
+  color: red;
+}
+.blue {
+  color: blue;
+}
+tr {
+  text-align: center;
+}

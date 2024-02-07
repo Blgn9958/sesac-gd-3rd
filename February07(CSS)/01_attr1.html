@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS 속성 1</title>
+    <link rel="stylesheet" href="./01_attr1.css" />
+  </head>
+  <body>
+    <h2>크기 단위</h2>
+
+    <div class="px">100px</div>
+
+    <div class="em-text">
+      em -> 32px -> 1em 32px이 됨
+      <div class="em-text">
+        em -> 64px
+        <div class="em-text">em -> 128px</div>
+      </div>
+    </div>
+
+    <div class="rem-text">
+      rem
+      <div class="rem-text">
+        rem
+        <div class="rem-text">rem</div>
+      </div>
+    </div>
+
+    <div class="em">10em</div>
+    <div class="em-parents">
+      em 부모 요소 font-size: 10px
+      <div class="em">10em</div>
+    </div>
+
+    <div class="rem">10rem</div>
+    <div class="rem-parents">
+      rem 부모 요소 font-size: 30px
+      <div class="rem">10rem</div>
+    </div>
+
+    <div class="percent-parents">
+      % 부모 요소 300px
+      <div class="percent">50%</div>
+    </div>
+
+    <div class="vh">30vh</div>
+    <div class="vw">30vw</div>
+
+    <hr />
+    <hr />
+    <h2>display 속성</h2>
+
+    <div class="d-block">block 1</div>
+    <div class="d-block">block 2</div>
+    <div class="d-block">block 3</div>
+    <div class="d-block">block 4</div>
+    <br /><br />
+    <span class="d-inline">inline 1</span>
+    <span class="d-inline">inline 2</span>
+    <span class="d-inline">inline 3</span>
+    <span class="d-inline">inline 4</span>
+    <br /><br />
+    <span class="d-inline-block">inline-block 1</span>
+    <span class="d-inline-block">inline-block 2</span>
+    <span class="d-inline-block">inline-block 3</span>
+    <span class="d-inline-block">inline-block 4</span>
+  </body>
+</html>

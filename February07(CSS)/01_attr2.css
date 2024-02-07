@@ -1,0 +1,93 @@
+.google {
+  font-family: "Single Day", "Gothic A1", sans-serif;
+}
+
+@font-face {
+  font-family: "PartialSansKR-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/PartialSansKR-Regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+/* noonnu : @font-face, font=-face, font=-family를 사용해 웹 폰트를 적용 */
+
+.noonnu {
+  font-family: "PartialSansKR-Regular", sans-serif;
+}
+
+.sentence {
+  font-weight: 700;
+  /* 글씨체마다 제공되는 font-weight 값이 머두 제각각이기 떄문에 모든 값이 적용되는 것이 않음 */
+
+  font-size: 1rem;
+
+  text-align: center;
+
+  text-decoration: line-through;
+  text-decoration: underline;
+
+  /* 줄 간 간격 조정 대체로 배수를 나타내는 단위가 없는 것을 사용 */
+  line-height: 1;
+  line-height: 100%;
+}
+
+.line-height {
+  /* px값 지정 시 한 줄의 높이가 해당 px로 지정되고ㅡ 세로 가운데 정렬 */
+  line-height: 50px;
+  color: pink;
+}
+
+.opacity {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+
+.opacity-20 {
+  opacity: 0.2;
+}
+
+.opacity-80 {
+  opacity: 0.8;
+}
+
+.opacity-1 {
+  opacity: 1;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  border: 1px solid;
+  display: inline-block;
+}
+.d-none {
+  /* display: none; */
+  background-color: red;
+}
+.invisible {
+  /* visibility: hidden; */
+  background-color: orangered;
+}
+.opacity-0 {
+  /* opacity: 0; */
+  background-color: tomato;
+}
+
+.text-container {
+  width: 70vw;
+  height: 300px;
+  border: 5px solid black;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-scroll {
+  overflow: scroll;
+}
+
+.overflow-visible {
+  overflow: visible;
+}
