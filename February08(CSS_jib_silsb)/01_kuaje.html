@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>선택자 종합 실습</title>
+    <style>
+      /* hover */
+      h3 > span:hover {
+        background-color: red;
+        color: green;
+      }
+      /* focus */
+      textarea:focus {
+        background-color: green;
+      }
+
+      /* checked */
+      #agree:checked + label {
+        background-color: green;
+      }
+
+      #dontagree:checked + label {
+        background-color: yellowgreen;
+      }
+      /* active */
+      button:active {
+        background-color: green;
+        color: black;
+      }
+
+      form {
+        width: 400px;
+      }
+
+      textarea {
+        width: 100%;
+      }
+
+      button {
+        float: right;
+        padding: 5px 15px;
+        background-color: #f96666;
+        color: white;
+        font-size: 17px;
+        border-radius: 10px;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h3><span>건의 사항을 적어주세요!</span></h3>
+    <form>
+      <!-- label - 명시적 방식: id와 for 맞추기 - 암시적 방식: label 내부에 input
+        작성 - checkbox 사용 시 명시적 방식으로 작성 -->
+      <textarea
+        name="건의 사항"
+        id=""
+        cols="30"
+        rows="10"
+        placeholder="건의사항"
+      >
+      </textarea>
+
+      <input type="checkbox" id="agree" />
+      <label for="agree">동의합니다</label>
+
+      <input type="checkbox" id="dontagree" />
+      <label for="dontagree">동의 안합니다.</label>
+
+      <button>제출</button>
+    </form>
+  </body>
+</html>

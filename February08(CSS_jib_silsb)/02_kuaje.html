@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>실습 박스 모델 사용하기</title>
+  </head>
+  <style>
+    .container {
+      background-color: orange;
+      width: auto;
+      height: 200px;
+    }
+
+    .container * {
+      display: inline-block;
+      width: 200px;
+      height: 100px;
+      margin-right: 40px;
+    }
+
+    .html {
+      background-color: aqua;
+    }
+    .css {
+      background-color: green;
+    }
+    .js {
+      background-color: red;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="html">html</div>
+      <div class="css">css</div>
+      <div class="js">js</div>
+    </div>
+  </body>
+</html>

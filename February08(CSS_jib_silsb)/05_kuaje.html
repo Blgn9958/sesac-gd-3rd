@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>실습 요소 사라지게 하기</title>
+  </head>
+  <style>
+    .hiding {
+      background-color: blue;
+      width: 200px;
+      height: 200px;
+      color: white;
+    }
+    div:hover * {
+      visibility: hidden;
+    }
+  </style>
+  <body>
+    <div>
+      <div class="hiding">
+        해당 div에 마우스가 올라가면 요소가 사라지게 만들기
+      </div>
+    </div>
+  </body>
+</html>
