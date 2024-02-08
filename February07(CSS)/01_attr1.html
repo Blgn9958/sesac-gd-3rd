@@ -12,10 +12,10 @@
     <div class="px">100px</div>
 
     <div class="em-text">
-      em -> 32px -> 1em 32px이 됨
+      em -&gt; 32px
       <div class="em-text">
-        em -> 64px
-        <div class="em-text">em -> 128px</div>
+        1em은 32px이 됨 em -&gt; 64px
+        <div class="em-text">em -&gt; 128px</div>
       </div>
     </div>
 
@@ -47,7 +47,7 @@
     <div class="vh">30vh</div>
     <div class="vw">30vw</div>
 
-    <hr />
+    <br />
     <hr />
     <h2>display 속성</h2>
 
@@ -65,5 +65,42 @@
     <span class="d-inline-block">inline-block 2</span>
     <span class="d-inline-block">inline-block 3</span>
     <span class="d-inline-block">inline-block 4</span>
+
+    <br />
+    <!-- inline 요소 자식으로 block 요소 들어갈 경우 레이아웃 깨짐 사용 X -->
+    <span style="border: 5px solid black">
+      span
+      <div style="background-color: gray">div</div>
+    </span>
+
+    <h3>박스 모델 사용하기 실습</h3>
+    <div class="container">
+      <div class="html">HTML</div>
+      <div class="css">CSS</div>
+      <div class="js">Javascript</div>
+    </div>
+    <br />
+    <hr />
+
+    <h2>max-width, min-width</h2>
+    <div class="parent">
+      <div class="min"></div>
+      <div class="max"></div>
+    </div>
+    <br />
+
+    <header class="header">header</header>
+    <div class="calc">calc() 사용하기</div>
+    <br />
+    <hr />
+
+    <h2>border, border-radious</h2>
+    <div class="square border">border</div>
+    <button class="square rounded">rounded</button>
+    <br />
+    <hr />
+
+    <div class="box-sizing content-box">content-box</div>
+    <div class="box-sizing border-box">border-box</div>
   </body>
 </html>
