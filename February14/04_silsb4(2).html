@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input {
+        height: 50px;
+        background-color: whitesmoke;
+        border: none;
+        border-radius: 25px;
+        background-image: url(./img/search-icon.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: 15px 10px;
+        padding: 0 15px 0 55px;
+        font-size: 20px;
+      }
+
+      input:focus {
+        outline: none;
+        /* focus 시 자동으로 생기는 태두리 속성 */
+      }
+
+      /* not(input:hover)은 포커스 되었을 때 제외한 hover 상태를 위해 작성 */
+      input:hover:not(input:focus) {
+        background-color: lightgrey;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" placeholder="검색" />
+  </body>
+</html>

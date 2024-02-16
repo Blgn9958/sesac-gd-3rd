@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>실습 배경 적용</title>
+  </head>
+  <style>
+    .prac1,
+    .prac2,
+    .prac3 {
+      background-color: skyblue;
+      width: 800px;
+      height: 500px;
+      margin-bottom: 15px;
+      background-image: url(https://item.kakaocdn.net/do/d84248170c2c52303db27306a00fb861f604e7b0e6900f9ac53a43965300eb9a);
+    }
+
+    .prac1 {
+      background-position: center;
+      background-repeat: repeat-x;
+    }
+    .prac2 {
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position-x: 100px;
+      background-position-y: 30px;
+    }
+    .prac3 {
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+  <body>
+    <div class="prac1"></div>
+    <div class="prac2"></div>
+    <div class="prac3"></div>
+  </body>
+</html>

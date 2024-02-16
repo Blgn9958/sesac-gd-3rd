@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>검색창 만들기</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+    body {
+      justify-content: center;
+      display: flex;
+    }
+
+    .input {
+      width: 60vh;
+      height: 8vh;
+      border-top-right-radius: 10vh;
+      border-bottom-right-radius: 10vh;
+      border: none;
+      font-size: 30px;
+      background-color: whitesmoke;
+    }
+
+    .search {
+      margin-top: 10vh;
+      border: none;
+      display: flex;
+      align-items: center;
+      border-radius: 10vh;
+      background-color: whitesmoke;
+    }
+    img {
+      position: relative;
+      width: 4vh;
+      height: 4vh;
+      margin: 0 10px 0 10px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 20vh;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>검색창 만들기</h1>
+      <div class="search">
+        <img src="./img/search-icon.png" />
+        <input type="text" placeholder="검색" class="input" />
+      </div>
+    </div>
+  </body>
+</html>
