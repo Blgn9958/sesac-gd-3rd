@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animation 실습</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        border-radius: 50%;
+
+        /* (참고) 배경색 그라데이션 및 그림자 적용 */
+        background: linear-gradient(45deg, yellow, orange, orangered);
+        box-shadow: -5px 5px 10px inset rgb(51, 51, 51, 0.5);
+
+        position: absolute;
+        animation: circle1 10s linear infinite;
+      }
+
+      @keyframes circle1 {
+        0% {
+          transform: translate(0px);
+        }
+        25% {
+          transform: translate(calc(100vw - 100px), 0px);
+        }
+        50% {
+          transform: translate(calc(100vw - 100px), calc(100vh - 100px));
+        }
+        75% {
+          transform: translate(0, calc(100vh - 100px));
+        }
+        100% {
+          translate: 0px;
+        }
+      }
+
+      /* h2 {
+        margin-top: calc(100vh - 100px);
+      }
+
+      p {
+        animation: slidein 3s infinite;
+      }
+      @keyframes slidein {
+        from {
+          margin-left: 100%;
+          width: 300%;
+        }
+        to {
+          margin-left: 0;
+          width: 100%;
+        }
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <!-- <h2>글자</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, sequi
+      vero. Autem ut ducimus placeat voluptatum, eveniet impedit quasi deserunt
+      tempore eius! Voluptatum odit iste, ea doloremque quia similique placeat.
+    </p> -->
+  </body>
+</html>
