@@ -64,7 +64,7 @@ header .inner .menu-right .header__search {
 }
 
 header .inner .menu-right .header__search input {
-  width: 150px;
+  width: 800px;
   height: 40px;
   border: 0.5px solid transparent;
   border-radius: 3px;
@@ -93,7 +93,7 @@ header .inner .menu-right .header__search i {
 
 .btn {
   cursor: pointer;
-  margin-left: 5px;
+  margin-left: 15px;
   padding: 0 5px;
   padding: 0 5px;
   border: 1px solid #989898;
