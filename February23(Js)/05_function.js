@@ -87,3 +87,21 @@ function hello(name) {
 
 const username = "layla";
 hello(username);
+
+// 과제
+// multify 함수 만들기
+function multifly(num1, num2) {
+  return num1 * num2;
+  console.log("aa"); //
+}
+
+console.log(multifly(7, 3));
+console.log(multifly(4, 10));
+
+// Square 함수  만들기
+function square(num) {
+  return num ** 2;
+}
+
+console.log(square(4));
+console.log(square(11));
