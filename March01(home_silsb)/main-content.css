@@ -1,0 +1,62 @@
+p {
+  margin: 0;
+}
+
+.talking,
+.marques,
+.views {
+  font-size: 14px;
+}
+
+.main {
+  margin-top: 30px;
+  padding-left: 87px;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.video-content {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 16px;
+  margin-bottom: 38px;
+}
+
+.thumbnail-1 {
+  height: 168px;
+}
+
+.video-content-second-div {
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  margin-top: 10px;
+}
+
+.channel-profile-photo {
+  height: 38px;
+  border-radius: 19px;
+}
+
+.video-content-first-div {
+  margin-left: 20px;
+}
+
+.talking {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.marques {
+  color: rgb(99, 99, 99);
+}
+
+.views {
+  color: rgb(99, 99, 99);
+}
