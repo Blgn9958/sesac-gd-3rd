@@ -1,0 +1,75 @@
+@import "utils";
+
+// import utils
+.sass-util {
+  background-color: $color-main-util;
+}
+
+.sass-util-btn {
+  @include btn($bgColor: $color-main-util);
+}
+
+.sass-box {
+  width: 100px;
+  height: 100px;
+  background-color: palevioletred;
+}
+$color-main: #4365a1;
+$boxShadow: 2px 2px 6px gray;
+$mobile: 720px;
+
+.sass-var {
+  background-color: $color-main;
+  box-shadow: $boxShadow;
+}
+
+.sass-var {
+  color: $color-main;
+}
+
+@media screen and (max-width: $mobile) {
+  .sass-var2 {
+    background-color: red;
+  }
+}
+
+.sass-calc {
+  width: 500px - 80px;
+  height: calc(50vh - 180px);
+  border: 5px solid yellow;
+}
+.sass-div1 {
+  border: 5px solid pink;
+  padding: 50px;
+}
+
+.sass-div2 {
+  border: 5px solid skyblue;
+  padding: 10px;
+}
+
+@mixin bold-border() {
+  border: 10px solid black;
+}
+
+@mixin add-border($borderwidth: 5px, $bordercolor: yellow) {
+  border: $borderwidth $bordercolor solid;
+}
+.sass-mixin {
+  width: 100px;
+  height: 100px;
+  background-color: aliceblue;
+  // @include bold-border();
+  @include add-border(8px, green);
+}
+
+.sass-btn {
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 30px;
+}
+
+.sass-btn-extends {
+  @extend .sass-btn;
+  background-color: tomato;
+}
